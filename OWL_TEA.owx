@@ -1,0 +1,1378 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.com"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.com">
+    <Prefix name="" IRI="http://example.com#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="gufo" IRI="http://purl.org/nemo/gufo#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Apoio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caracteristica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compartilhamento_de_sentimento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comunicação_Visual_ou_Sensorial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dificuldade_e_processamento_de_resposta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dificuldade_em_entender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EspctroAutista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expressão_Facial_Atípica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expressão_de_Emoções_Diferente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hiperverbalidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interesses_fixos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inversão_Pronominal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linguagem_Telegráfica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linguagem_ecolalia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NivelDeApoio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scripting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uso_gesto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#agitar_as_mãos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#apoioMuitoSubstancial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#apoioSubstancial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#balançar_o_corpo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compartilhamento_de_ideia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#comportamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#comportamentoRepetitivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#comportamentoRestritivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#comportamentos_compulsivos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#critrioA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#critrioB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dificuldadeEmSocializar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#exigidoApoio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fala_monotona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#foco_intenso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iniciar_uma_conversa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#intensidadeDaCaracteristica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inter_literal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#interaoSocial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#linguagem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#linguagemNoVerbal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#linguagem_unilateral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lingugemVerbal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#manter_interação_social"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#posturas_corporais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reciprocidadeSocial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resistência_a_mudanças"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tom_de_voz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#uso_de_expressão_facial"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Category"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:ConcreteIndividualType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Kind"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Mixin"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Hasrestrictivebehavior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasapoio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasapoiomuitosubstancial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasapoiosubstancial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hascharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasdifficultysocializing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasintensity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasreciprocitysocial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasrepetitivebehavior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasverballanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCharacteristicof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apoio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caracteristica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EspctroAutista"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NivelDeApoio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apoioMuitoSubstancial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apoioSubstancial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comportamento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comportamentoRepetitivo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comportamentoRestritivo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#critrioA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#critrioB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dificuldadeEmSocializar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#exigidoApoio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intensidadeDaCaracteristica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#interaoSocial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#linguagem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#linguagemNoVerbal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lingugemVerbal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pessoa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#reciprocidadeSocial"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#comportamento"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#comportamento"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasrestrictivebehavior"/>
+                <Class IRI="#comportamentoRestritivo"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#comportamento"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#comportamento"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasrepetitivebehavior"/>
+                <Class IRI="#comportamentoRepetitivo"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#interaoSocial"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#interaoSocial"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasdifficultysocializing"/>
+                <Class IRI="#dificuldadeEmSocializar"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#interaoSocial"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#interaoSocial"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasreciprocitysocial"/>
+                <Class IRI="#reciprocidadeSocial"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#linguagem"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#linguagem"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasverballanguage"/>
+                <Class IRI="#lingugemVerbal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#linguagem"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#linguagem"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isCharacteristicof"/>
+                <Class IRI="#linguagemNoVerbal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Apoio"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apoio"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Caracteristica"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apoio"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#NivelDeApoio"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apoio"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#intensidadeDaCaracteristica"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <Class IRI="#lingugemVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasrestrictivebehavior"/>
+            <Class IRI="#comportamentoRestritivo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasdifficultysocializing"/>
+            <Class IRI="#dificuldadeEmSocializar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasreciprocitysocial"/>
+            <Class IRI="#reciprocidadeSocial"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasrepetitivebehavior"/>
+            <Class IRI="#comportamentoRepetitivo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasverballanguage"/>
+            <Class IRI="#lingugemVerbal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isCharacteristicof"/>
+            <Class IRI="#linguagemNoVerbal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#EspctroAutista"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Apoio"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioA"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioB"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteristica"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#intensidadeDaCaracteristica"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compartilhamento_de_sentimento"/>
+        <Class IRI="#reciprocidadeSocial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comunicação_Visual_ou_Sensorial"/>
+        <Class IRI="#linguagemNoVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dificuldade_e_processamento_de_resposta"/>
+        <Class IRI="#reciprocidadeSocial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dificuldade_em_entender"/>
+        <Class IRI="#dificuldadeEmSocializar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EspctroAutista"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EspctroAutista"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Caracteristica"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expressão_Facial_Atípica"/>
+        <Class IRI="#linguagemNoVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expressão_de_Emoções_Diferente"/>
+        <Class IRI="#linguagemNoVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiperverbalidade"/>
+        <Class IRI="#lingugemVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interesses_fixos"/>
+        <Class IRI="#comportamentoRestritivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inversão_Pronominal"/>
+        <Class IRI="#lingugemVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linguagem_Telegráfica"/>
+        <Class IRI="#lingugemVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linguagem_ecolalia"/>
+        <Class IRI="#lingugemVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NivelDeApoio"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NivelDeApoio"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Apoio"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scripting"/>
+        <Class IRI="#lingugemVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uso_gesto"/>
+        <Class IRI="#dificuldadeEmSocializar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agitar_as_mãos"/>
+        <Class IRI="#comportamentoRepetitivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apoioMuitoSubstancial"/>
+        <Class IRI="#NivelDeApoio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apoioMuitoSubstancial"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <ObjectUnionOf>
+                <Class IRI="#Apoio"/>
+                <Class IRI="#critrioA"/>
+                <Class IRI="#critrioB"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apoioMuitoSubstancial"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioA"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apoioMuitoSubstancial"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioB"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apoioSubstancial"/>
+        <Class IRI="#NivelDeApoio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apoioSubstancial"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <ObjectUnionOf>
+                <Class IRI="#Apoio"/>
+                <Class IRI="#critrioA"/>
+                <Class IRI="#critrioB"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apoioSubstancial"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioA"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apoioSubstancial"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioB"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#balançar_o_corpo"/>
+        <Class IRI="#comportamentoRepetitivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#compartilhamento_de_ideia"/>
+        <Class IRI="#reciprocidadeSocial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamento"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamento"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#comportamentoRepetitivo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamento"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#comportamentoRestritivo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamento"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioB"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamentoRepetitivo"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamentoRepetitivo"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#comportamento"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamentoRestritivo"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamentoRestritivo"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#comportamento"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamentos_compulsivos"/>
+        <Class IRI="#comportamentoRestritivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioA"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#interaoSocial"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#linguagem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioA"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Caracteristica"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioA"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#apoioMuitoSubstancial"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioA"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#apoioSubstancial"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioA"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#exigidoApoio"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioB"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioB"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Caracteristica"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioB"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#apoioMuitoSubstancial"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioB"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#apoioSubstancial"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#critrioB"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#comportamento"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dificuldadeEmSocializar"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dificuldadeEmSocializar"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#interaoSocial"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exigidoApoio"/>
+        <Class IRI="#NivelDeApoio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exigidoApoio"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <ObjectUnionOf>
+                <Class IRI="#Apoio"/>
+                <Class IRI="#critrioA"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exigidoApoio"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioA"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fala_monotona"/>
+        <Class IRI="#lingugemVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#foco_intenso"/>
+        <Class IRI="#comportamentoRestritivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iniciar_uma_conversa"/>
+        <Class IRI="#dificuldadeEmSocializar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intensidadeDaCaracteristica"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intensidadeDaCaracteristica"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <ObjectUnionOf>
+                <Class IRI="#Apoio"/>
+                <Class IRI="#Caracteristica"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intensidadeDaCaracteristica"/>
+        <ObjectMinCardinality cardinality="3">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Caracteristica"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intensidadeDaCaracteristica"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Apoio"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inter_literal"/>
+        <Class IRI="#lingugemVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#interaoSocial"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#interaoSocial"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#dificuldadeEmSocializar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#interaoSocial"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#reciprocidadeSocial"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#interaoSocial"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioA"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linguagem"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linguagem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#linguagemNoVerbal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linguagem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#lingugemVerbal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linguagem"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#critrioA"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linguagemNoVerbal"/>
+        <Class abbreviatedIRI="gufo:ConcreteIndividualType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linguagemNoVerbal"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#linguagem"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linguagem_unilateral"/>
+        <Class IRI="#reciprocidadeSocial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lingugemVerbal"/>
+        <Class abbreviatedIRI="gufo:ConcreteIndividualType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lingugemVerbal"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#linguagem"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#manter_interação_social"/>
+        <Class IRI="#dificuldadeEmSocializar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pessoa"/>
+        <Class IRI="#EspctroAutista"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#posturas_corporais"/>
+        <Class IRI="#linguagemNoVerbal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reciprocidadeSocial"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reciprocidadeSocial"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#interaoSocial"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resistência_a_mudanças"/>
+        <Class IRI="#comportamentoRestritivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tom_de_voz"/>
+        <Class IRI="#dificuldadeEmSocializar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#uso_de_expressão_facial"/>
+        <Class IRI="#dificuldadeEmSocializar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gufo:Quality"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Compartilhamento_de_sentimento"/>
+        <Class IRI="#Dificuldade_e_processamento_de_resposta"/>
+        <Class IRI="#compartilhamento_de_ideia"/>
+        <Class IRI="#linguagem_unilateral"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Comunicação_Visual_ou_Sensorial"/>
+        <Class IRI="#Expressão_Facial_Atípica"/>
+        <Class IRI="#Expressão_de_Emoções_Diferente"/>
+        <Class IRI="#posturas_corporais"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dificuldade_em_entender"/>
+        <Class IRI="#Uso_gesto"/>
+        <Class IRI="#iniciar_uma_conversa"/>
+        <Class IRI="#manter_interação_social"/>
+        <Class IRI="#tom_de_voz"/>
+        <Class IRI="#uso_de_expressão_facial"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hiperverbalidade"/>
+        <Class IRI="#Inversão_Pronominal"/>
+        <Class IRI="#Linguagem_Telegráfica"/>
+        <Class IRI="#Linguagem_ecolalia"/>
+        <Class IRI="#Scripting"/>
+        <Class IRI="#fala_monotona"/>
+        <Class IRI="#inter_literal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Interesses_fixos"/>
+        <Class IRI="#comportamentos_compulsivos"/>
+        <Class IRI="#foco_intenso"/>
+        <Class IRI="#resistência_a_mudanças"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#agitar_as_mãos"/>
+        <Class IRI="#balançar_o_corpo"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#dificuldadeEmSocializar"/>
+        <NamedIndividual IRI="#Apoio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#linguagemNoVerbal"/>
+        <NamedIndividual IRI="#Apoio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lingugemVerbal"/>
+        <NamedIndividual IRI="#Apoio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#reciprocidadeSocial"/>
+        <NamedIndividual IRI="#Apoio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#intensidadeDaCaracteristica"/>
+        <NamedIndividual IRI="#Caracteristica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Caracteristica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Mixin"/>
+        <NamedIndividual IRI="#EspctroAutista"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Quality"/>
+        <NamedIndividual IRI="#EspctroAutista"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#NivelDeApoio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#comportamento"/>
+        <NamedIndividual IRI="#apoioMuitoSubstancial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#interaoSocial"/>
+        <NamedIndividual IRI="#apoioMuitoSubstancial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#linguagem"/>
+        <NamedIndividual IRI="#apoioMuitoSubstancial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#apoioMuitoSubstancial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#interaoSocial"/>
+        <NamedIndividual IRI="#apoioSubstancial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#linguagem"/>
+        <NamedIndividual IRI="#apoioSubstancial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#apoioSubstancial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#comportamento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#comportamentoRepetitivo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#comportamentoRestritivo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dificuldadeEmSocializar"/>
+        <NamedIndividual IRI="#critrioA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#linguagemNoVerbal"/>
+        <NamedIndividual IRI="#critrioA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lingugemVerbal"/>
+        <NamedIndividual IRI="#critrioA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#reciprocidadeSocial"/>
+        <NamedIndividual IRI="#critrioA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#critrioA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#comportamentoRestritivo"/>
+        <NamedIndividual IRI="#critrioB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dificuldadeEmSocializar"/>
+        <NamedIndividual IRI="#critrioB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#linguagemNoVerbal"/>
+        <NamedIndividual IRI="#critrioB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#critrioB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#dificuldadeEmSocializar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#exigidoApoio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#intensidadeDaCaracteristica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#interaoSocial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#linguagem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#linguagemNoVerbal"/>
+        <NamedIndividual IRI="#linguagemNoVerbal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lingugemVerbal"/>
+        <NamedIndividual IRI="#lingugemVerbal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Caracteristica"/>
+        <NamedIndividual IRI="#pessoa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#reciprocidadeSocial"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Apoio"/>
+        <NamedIndividual IRI="#comportamentoRepetitivo"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Apoio"/>
+        <NamedIndividual IRI="#comportamentoRestritivo"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasdifficultysocializing"/>
+        <NamedIndividual IRI="#NivelDeApoio"/>
+        <NamedIndividual IRI="#critrioA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasrepetitivebehavior"/>
+        <NamedIndividual IRI="#apoioMuitoSubstancial"/>
+        <NamedIndividual IRI="#critrioB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasapoiosubstancial"/>
+        <NamedIndividual IRI="#pessoa"/>
+        <NamedIndividual IRI="#comportamentoRepetitivo"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hascharacteristic"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasdifficultysocializing"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasintensity"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasreciprocitysocial"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasverballanguage"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isCharacteristicof"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Hasrestrictivebehavior"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasapoio"/>
+        <Class IRI="#critrioA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasapoiomuitosubstancial"/>
+        <Class IRI="#critrioA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasapoiomuitosubstancial"/>
+        <Class IRI="#critrioB"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasapoiosubstancial"/>
+        <Class IRI="#critrioA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasapoiosubstancial"/>
+        <Class IRI="#critrioB"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hascharacteristic"/>
+        <Class IRI="#pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasdifficultysocializing"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasintensity"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasreciprocitysocial"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasrepetitivebehavior"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasverballanguage"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCharacteristicof"/>
+        <Class IRI="#linguagemNoVerbal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Hasrestrictivebehavior"/>
+        <Class IRI="#comportamentoRestritivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasapoio"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasapoio"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasapoiomuitosubstancial"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasapoiosubstancial"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hascharacteristic"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasdifficultysocializing"/>
+        <Class IRI="#dificuldadeEmSocializar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasintensity"/>
+        <Class IRI="#intensidadeDaCaracteristica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasreciprocitysocial"/>
+        <Class IRI="#reciprocidadeSocial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasrepetitivebehavior"/>
+        <Class IRI="#comportamentoRepetitivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasverballanguage"/>
+        <Class IRI="#lingugemVerbal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCharacteristicof"/>
+        <Class IRI="#Caracteristica"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Apoio</IRI>
+        <Literal xml:lang="en">Apoio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Caracteristica</IRI>
+        <Literal xml:lang="en">Caracteristica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EspctroAutista</IRI>
+        <Literal xml:lang="en">Espctro Autista</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hasrestrictivebehavior</IRI>
+        <Literal>Possui comportamento retritivo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NivelDeApoio</IRI>
+        <Literal xml:lang="en">Nivel de Apoio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#apoioMuitoSubstancial</IRI>
+        <Literal xml:lang="en">apoio muito substancial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#apoioSubstancial</IRI>
+        <Literal xml:lang="en">apoio substancial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comportamento</IRI>
+        <Literal xml:lang="en">comportamento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comportamentoRepetitivo</IRI>
+        <Literal xml:lang="en">comportamento repetitivo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comportamentoRestritivo</IRI>
+        <Literal xml:lang="en">comportamento restritivo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#critrioA</IRI>
+        <Literal xml:lang="en">crit�rio A</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#critrioB</IRI>
+        <Literal xml:lang="en">crit�rio B</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dificuldadeEmSocializar</IRI>
+        <Literal xml:lang="en">dificuldade em socializar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#exigidoApoio</IRI>
+        <Literal xml:lang="en">exigido apoio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hascharacteristic</IRI>
+        <Literal>tem caracteristica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasdifficultysocializing</IRI>
+        <Literal xml:lang="pt-br">tem dificuldade em socializar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasreciprocitysocial</IRI>
+        <Literal xml:lang="pt-br">tem reciprocidade social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasrepetitivebehavior</IRI>
+        <Literal xml:lang="pt-br">tem comportamento repetivo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasverballanguage</IRI>
+        <Literal>possui linguagem verbal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#intensidadeDaCaracteristica</IRI>
+        <Literal xml:lang="en">intensidade da caracteristica </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#interaoSocial</IRI>
+        <Literal xml:lang="en">intera��o social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCharacteristicof</IRI>
+        <Literal>é caracteristica de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#linguagem</IRI>
+        <Literal xml:lang="en">linguagem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#linguagemNoVerbal</IRI>
+        <Literal xml:lang="en">linguagem n�o verbal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lingugemVerbal</IRI>
+        <Literal xml:lang="en">lingugem verbal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#reciprocidadeSocial</IRI>
+        <Literal xml:lang="en">reciprocidade social</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
