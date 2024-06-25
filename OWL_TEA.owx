@@ -14,16 +14,16 @@
     <Prefix name="gufo" IRI="http://purl.org/nemo/gufo#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Apoio"/>
+        <Class IRI="#support"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Caracteristica"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Compartilhamento_de_sentimento"/>
+        <Class IRI="#feeling_sharing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Comunicação_Visual_ou_Sensorial"/>
+        <Class IRI="#Visual_or_Sensory_Communication"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Dificuldade_e_processamento_de_resposta"/>
