@@ -1,0 +1,230 @@
+@prefix : <http://example.com#>.
+@prefix gufo: <http://purl.org/nemo/gufo#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.com> rdf:type owl:Ontology;
+    owl:imports gufo:.
+:Support rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Support"@en.
+:SupportLevel rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "Support Level"@en.
+:DemandedSupport rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Demanded Support"@en.
+:SubstantialSupport rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Substantial Support"@en.
+:HighlySubstantialSupport rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Highly Substantial Support"@en.
+:AutismSpectrum rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Autism Spectrum"@en.
+:Characteristic rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Quality;
+    rdfs:label "Characteristic"@en.
+:CriterionA rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Criterion A"@en.
+:CriterionB rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Criterion B"@en.
+:Communication rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Communication"@en.
+:SocialInteraction rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Social Interaction"@en.
+:Behavior rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Behavior"@en.
+:VerbalCommunication rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Verbal Communication"@en.
+:NonverbalCommunication rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Nonverbal Communication"@en.
+:DifficultyInSocializing rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Difficulty in Socializing"@en.
+:SocialReciprocity rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Social Reciprocity"@en.
+:ConstrainingBehavior rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Constraining Behavior"@en.
+:RepetitiveBehavior rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Repetitive Behavior"@en.
+:CharacteristicIntensity rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Quality;
+    rdfs:label "Characteristic  Intensity"@en.
+:DemandedSupport rdfs:subClassOf :SupportLevel.
+:SubstantialSupport rdfs:subClassOf :SupportLevel.
+:HighlySubstantialSupport rdfs:subClassOf :SupportLevel.
+:VerbalCommunication rdfs:subClassOf :Communication.
+:NonverbalCommunication rdfs:subClassOf :Communication.
+:ConstrainingBehavior rdfs:subClassOf :Behavior.
+:RepetitiveBehavior rdfs:subClassOf :Behavior.
+:SocialReciprocity rdfs:subClassOf :SocialInteraction.
+:DifficultyInSocializing rdfs:subClassOf :SocialInteraction.
+:Communication rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CriterionA
+].
+:CriterionA rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:someValuesFrom :Communication
+].
+:SocialInteraction rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CriterionA
+].
+:CriterionA rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:someValuesFrom :SocialInteraction
+].
+:DemandedSupport rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CriterionA
+].
+:CriterionA rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DemandedSupport
+].
+:SupportLevel rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Support
+].
+:Support rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :SupportLevel
+].
+:SubstantialSupport rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CriterionA
+].
+:CriterionA rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :SubstantialSupport
+].
+:HighlySubstantialSupport rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CriterionA
+].
+:CriterionA rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :HighlySubstantialSupport
+].
+:Behavior rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CriterionB
+].
+:CriterionB rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Behavior
+].
+:SubstantialSupport rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CriterionB
+].
+:CriterionB rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :SubstantialSupport
+].
+:HighlySubstantialSupport rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CriterionB
+].
+:CriterionB rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :HighlySubstantialSupport
+].
+:Characteristic rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Support
+].
+:Support rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Characteristic
+].
+:CharacteristicIntensity rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Support
+].
+:Support rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CharacteristicIntensity
+].
+:Characteristic rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CharacteristicIntensity
+].
+:CharacteristicIntensity rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Characteristic
+].
+:Characteristic rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:someValuesFrom :CriterionA
+].
+:CriterionA rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Characteristic
+].
+:Characteristic rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:someValuesFrom :CriterionB
+].
+:CriterionB rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Characteristic
+].
